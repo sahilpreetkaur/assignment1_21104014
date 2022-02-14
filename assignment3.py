@@ -128,7 +128,7 @@ student = {} #empty dictionary
 while True:
     p = int(input("enter sid "))
     student[p]= input("enter name ")
-    n = input("Y or N ")
+    n = input("Y for more or N to end ")
     if n == 'Y':
         continue
     elif n == 'N':
