@@ -1,5 +1,5 @@
 #ANSWER 1
-def word_count(str):
+def word_count(str): #function to count words
     counts = dict()
     words = str.split()
 
@@ -11,16 +11,16 @@ def word_count(str):
 
     return counts
 
-def letter_count(str):
+def letter_count(str): #function to count letters
 
-    all_freq = {}
+    cont = {}
   
     for i in str:
-        if i in all_freq:
-            all_freq[i] += 1
+        if i in cont:
+            cont[i] += 1
         else:
-            all_freq[i] = 1
-    return all_freq
+            cont[i] = 1
+    return cont
   
 str1 =input("enter a word or sentence ")
 
@@ -65,7 +65,7 @@ if cond == True:
             
             date = 29
             print("Next Date is:",date,"/",Month,"/",Year)
-        elif Year%4 != 0:
+        elif Year%4 != 0:  #condition for leap year
             date = 1
             mon = Month + 1
             print("Next Date is:",date,"/",mon,"/",Year)
@@ -82,7 +82,7 @@ if cond == True:
         print("Next Date is:",date,"/",mon,"/",Year)
 
 else:
-    print("error, write correct date")
+    print("pls write correct date")
 
 
 #ANSWER 3
@@ -128,7 +128,7 @@ elif grade == 4:
 if 4<=grade<=10:
     print ("Your Grade is", letter_grade, "and",performance,"performance")
 else:
-    print ("error, enter valid grade point")
+    print ("pls enter valid grade point")
     
 
 #ANSWER 5
@@ -148,7 +148,7 @@ student = {} #empty dictionary
 while True:
     p = int(input("enter sid "))
     student[p]= input("enter name ")
-    n = input("Y or N ")
+    n = input("Y if you want to add more or N if you want to exit ")
     if n == 'Y':
         continue
     elif n == 'N':
